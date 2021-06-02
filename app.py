@@ -94,7 +94,7 @@ def main():
     st.set_option('deprecation.showfileUploaderEncoding', False)
     prodheader = "<div><span class='fontteal'><span class='bold'>vizdxp</span></div>"
     st.sidebar.markdown(prodheader, unsafe_allow_html=True)
-    df = st.sidebar.file_uploader('Upload csv', type='csv', encoding='auto')
+    df = st.sidebar.file_uploader('Upload csv', type='csv')
     page = st.sidebar.radio("Go-To",('Getting started','Dataset stats','Visual data explorer', 'Report'), key="page_selection")
     if page == 'Getting started':
         st.markdown("# Welcome.")
